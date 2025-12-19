@@ -1,0 +1,21 @@
+Functional Requirement
+-----------------------------
+- Natification Type -> success, info, warning, error
+- Costomization -> text, duration, animation, position
+- Animation -> fade, pop, slide
+- Position -> top-left, top-right, bottom-left, bottom-right
+- Close Button
+- Stacking Behavior
+- Notification Queue - Simultaniously trigered toast displays one after the other
+
+
+Non Functional Requirement
+----------------------------
+
+Performance
+Accessibility - tab press should work
+User Experience
+compatibility 
+scalability 
+
+

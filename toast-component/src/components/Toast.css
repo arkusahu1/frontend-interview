@@ -1,0 +1,138 @@
+.toast {
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #00000033;
+    animation-duration: 0.5s;
+}
+
+.success {
+    background-color: green;
+}
+
+.info {
+    background-color: skyblue;
+}
+
+.warning {
+    background-color: orange;
+}
+
+.error {
+    background-color: red;
+}
+
+.close-btn {
+    margin-left: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.toast-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 9999;
+}
+
+.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.top-right {
+    top: 20px;
+    right: 20px;
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.top-left,
+.bottom-left {
+  align-items: flex-start;
+}
+
+.top-right,
+.bottom-right {
+  align-items: flex-end;
+}
+
+/* Top positions */
+.top-left .toast.slide,
+.top-right .toast.slide {
+  animation-name: slideUp;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Bottom positions */
+.bottom-left .toast.slide,
+.bottom-right .toast.slide {
+  animation-name: slideDown;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- FADE ---------- */
+.toast.fade {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ---------- POP ---------- */
+.toast.pop {
+  animation-name: popIn;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

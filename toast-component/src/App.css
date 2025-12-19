@@ -1,0 +1,21 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    width: 410px;
+    flex-wrap: wrap;
+}
+
+.button-container > button {
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+}
