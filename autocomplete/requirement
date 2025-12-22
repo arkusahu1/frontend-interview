@@ -1,0 +1,21 @@
+Functional requirement
+----------------------
+Real time suggestions
+dynamic and static data support
+debouncing
+keyboard navigation
+highlighted match
+customozable
+loading indicator
+error display
+
+
+
+Non Functional requirement
+--------------------------
+Performance
+Responsive
+Security 
+Caching
+Accessibily 
+Compatibility 

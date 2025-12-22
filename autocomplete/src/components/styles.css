@@ -1,0 +1,48 @@
+.container {
+    position: relative;
+    width: 300px;
+}
+
+.container > input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.loading, .error {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.error {
+    color: red;
+}
+
+.suggestion-list {
+    position: absolute;
+    width: 100%;
+    border: solid 1px #ccc;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background: #fff;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: none;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover, li.active {
+    background-color: #f0f0f0;
+}
