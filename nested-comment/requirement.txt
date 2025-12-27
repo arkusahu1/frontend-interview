@@ -1,0 +1,19 @@
+Functional requirement
+-----------------------
+
+Nesting
+Comment Creation
+Replying
+Edit and Delete
+Upvote/Downvote
+Sorting - newest, oldest, mostvoted
+
+
+Non Functional requirement
+--------------------------
+
+Performance - Vertualization
+Scalibility
+Sequrity
+Maintainibility
+Accessibility
