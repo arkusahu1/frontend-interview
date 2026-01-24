@@ -101,34 +101,34 @@ function Autocomplete({
 	}
 
 	const handleKeyDown = (e) => {
-  if (!suggestion.length) return;
+		if (!suggestion.length) return;
 
-  switch (e.key) {
-    case 'ArrowDown':
-      e.preventDefault();
-      setActiveIndex((prev) =>
-        prev < suggestion.length - 1 ? prev + 1 : 0
-      );
-      break;
+		switch (e.key) {
+			case 'ArrowDown':
+			e.preventDefault();
+			setActiveIndex((prev) =>
+				prev < suggestion.length - 1 ? prev + 1 : 0
+			);
+			break;
 
-    case 'ArrowUp':
-      e.preventDefault();
-      setActiveIndex((prev) =>
-        prev > 0 ? prev - 1 : suggestion.length - 1
-      );
-      break;
+			case 'ArrowUp':
+			e.preventDefault();
+			setActiveIndex((prev) =>
+				prev > 0 ? prev - 1 : suggestion.length - 1
+			);
+			break;
 
-    case 'Enter':
-      if (activeIndex >= 0) {
-				handelSuggetionClick(suggestion[activeIndex])
-      }
-      break;
+			case 'Enter':
+			if (activeIndex >= 0) {
+						handelSuggetionClick(suggestion[activeIndex])
+			}
+			break;
 
-    case 'Escape':
-      setActiveIndex(-1);
-      break;
-  }
-};
+			case 'Escape':
+			setActiveIndex(-1);
+			break;
+		}
+	};
     
   return (
     <div className='container'>
