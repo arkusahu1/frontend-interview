@@ -1,0 +1,19 @@
+.container {
+  background-color: #bbb;
+  overflow: auto;
+}
+
+.container__item-list {
+  position: relative;
+}
+
+.container__item-list--item {
+  background-color: orangered;
+  border-top: solid 2px #ddd;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
