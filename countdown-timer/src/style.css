@@ -1,0 +1,27 @@
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+  text-align: center;
+}
+
+.container__fields {
+  display: flex;
+  gap: 10px;
+}
+
+.container__fields--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}

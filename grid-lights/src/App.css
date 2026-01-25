@@ -1,0 +1,18 @@
+.app {
+  display: grid;
+  gap: 10px;
+  width: fit-content;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    display: flex;
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    border: solid 1px #ccc;
+}
+
+.cell-active {
+  background-color: green;
+}

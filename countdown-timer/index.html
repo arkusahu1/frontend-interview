@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>countdown-timer</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <h1 class="title">Countdown Timer</h1>
+        <div class="container__fields">
+          <div class="container__fields--item">
+            Hours
+            <input maxlength="2" placeholder="00" oninput="this.value = this.value.slice(0, this.maxLength)" type="number" class="container__fields--hour">
+          </div> : 
+          <div class="container__fields--item">
+            Minutes
+            <input maxlength="2" placeholder="00" oninput="this.value = this.value.slice(0, this.maxLength)" type="number" class="container__fields--minute">
+          </div>
+          :   
+          <div class="container__fields--item">
+            Seconda
+            <input maxlength="2" placeholder="00" oninput="this.value = this.value.slice(0, this.maxLength)" type="number" class="container__fields--sec">
+          </div>
+        </div>
+        <div class="container__buttons">
+          <button class="start">Start</button>
+          <button class="stop">Stop</button>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
